@@ -7,15 +7,19 @@
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "set NODE_ENV=production&&node build/server.js"
+    "start:prod": "set NODE_ENV=production&&node build/server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "elm-static-html-lib": "^0.0.8-alpha.2",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "elm-hot-loader": "^0.5.4",
     "elm-webpack-loader": "4.5.0",
     "razzle": "^2.0.3"
-  }
+  },
+  "snyk": true
 }
