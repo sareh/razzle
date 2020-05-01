@@ -7,11 +7,14 @@
   "author": "Lucas Terra <lucasterra7@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "fork-ts-checker-webpack-plugin": "^0.4.1",
-    "ts-loader": "^4.2.0"
+    "ts-loader": "^4.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jest": "20.0.4",
@@ -19,5 +22,6 @@
   },
   "peerDependencies": {
     "typescript": ">=2.4.1"
-  }
+  },
+  "snyk": true
 }
