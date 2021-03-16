@@ -11,7 +11,7 @@
   "dependencies": {
     "@jaredpalmer/after": "latest",
     "express": "^4.16.2",
-    "razzle": "^2.0.3",
+    "razzle": "^4.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
